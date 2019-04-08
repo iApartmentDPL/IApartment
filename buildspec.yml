@@ -1,3 +1,4 @@
+version: 0.2 
 Project:
   Type: AWS::CodeBuild::Project
   Properties:
