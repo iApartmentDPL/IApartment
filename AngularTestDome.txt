@@ -1,0 +1,19 @@
+Q:Which of the following statements about components in Angular are correct?
+Ans:
+1)When a component depends on a service, the injector can be used to configure  dependency injection.
+2) A component defines its input parameters with the @Input decorator.
+3) A components ngOnDestroy method is called just before Angular destroys the component.
+
+
+Q:Select the statements about its use (in another components template or module) that are correct.
+Ans
+<welcome name="TestDome"></welcome> will display: "Welcome to TestDome!".
+@NgModule({ declarations: [ WelcomeComponent ] }) export class WelcomeModule {} declares that the welcome component belongs to the welcome module.
+
+Q:Which of the following statements about the routers behavior are correct?
+Ans :
+1) Optional parameters can be passed to any component via the query parameters of the ActivatedRoute.
+2) /detail/100 will use the <router-outlet name='route1'> to determine the position of the view.
+
+Q:Select the statements about the AnimalNoise component that are correct.
+When included in a components template, the AnimalNoise component creates a span containing the interpolated animals name and a button bound to makeNoise().

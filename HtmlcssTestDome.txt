@@ -1,0 +1,136 @@
+
+1) Occupy Full space browser
+Answer <style>
+    body {
+      margin: 0px;
+    }
+    article {
+  min-height: 50%;
+  width: 50%;
+  float: left;
+}
+article:nth-child(1) {
+    background: Red;
+   }
+article:nth-child(2) {
+    background: Yellow;
+   }
+article:nth-child(3) {
+    background: Blue;
+   }
+article:nth-child(4) {
+    background: Green;
+   }
+  </style>
+  
+  2)
+ The formula input field has an autocomplete option with the following options: "sin", "cos", "tan" and "cot".
+The iterations input field is a slider with possible values from 1 to 10.
+The precision input field is a number picker with possible values from 1 to 100, where 50 is the default value.
+Answer
+<body>
+  <form>
+    Formula: <input list="formula" name="formula">
+    <datalist id="formula">
+    <option value="sin">
+    <option value="cos">
+    <option value="tan">
+    <option value="cot">
+   
+  </datalist>
+    
+    <br />
+    Iterations: <input type="range" min="1" max="10" name="iterations"><br />
+    Precision: <input type="number" min="1" max="100" value="50" name="precision"><br />
+  </form>
+</body>
+
+
+3) Fix bugs
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Company page</title>
+  </head>
+  <body>
+    <p>Welcome! Here you can find the following things:</p>
+    <ol>
+      <li><a href="#logo"><em>Company's logo</em></a></li>
+      <li><a href="#employees">List of employees</a></li>
+    </ol>
+
+    <h1>Company's logo</h1>
+    <p>Company uses the following logos:</p>
+    <ul>
+      <li>New logo:<img src="new_logo.gif"/></li>
+      <li>Old logo:<img src="old_logo.gif"/></li>
+    </ul>
+
+    <h1>List of employees</h1>
+    <table>
+    <thead>
+      <th>First name</th>
+      <th>Last name</th>
+    </thead>
+    
+      <tr>
+        <td>Mary</td>
+        <td>Williams</td>
+      </tr>
+      <tr>
+        <td>James</td>
+        <td>Smith</td>
+      </tr>
+    </table>
+  </body>
+</html>
+4)
+Write CSS so that link <a href="http://www.testdome.com">Check documentation</a> and cursor looks like a question mark:
+<style type="text/css">
+     a {
+        text-transform:uppercase;
+        text-decoration: none;
+       cursor:help;
+        }
+      a:before {
+    content: '>';
+}
+      a:after {
+    content: '<';
+}  
+    </style>
+	
+5)
+Update the website's HTML, without using JavaScript or CSS, to make use of semantic elements so that:
+
+The classless outer div element is replaced with a more appropriate element.
+The divs with the image and caption classes are replaced with self-contained content elements.
+The divs with the lorem-ipsum and description classes are replaced with elements, so that by default only the contents of the description element are shown. When the contents of the description element are clicked, the visibility of the rest of the lorem-ipsum element is toggled.
+
+
+<article>
+      <h1>Lorem Ipsum</h1>
+      
+      <figure class="image">
+        <img src="https://goo.gl/zF9eky" alt="Lorem Ipsum">
+        <figcaption class="caption">Lorem Ipsum</figcaption>
+      </figure>
+      
+      <details class="lorem-ipsum">
+        <summary class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Curabitur vitae hendrerit mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Mauris lacinia scelerisque nibh nec gravida. 
+          Duis malesuada nec nibh sit amet pulvinar. 
+          Phasellus congue porttitor arcu, ut suscipit nibh aliquam vel. 
+          Nunc arcu lectus, egestas ut sem ac, euismod porttitor eros. 
+          Phasellus tincidunt consequat pharetra. Maecenas sodales purus at nulla finibus dapibus. 
+          Nullam varius at nisl vel euismod. Fusce aliquet ligula non tempor fermentum. 
+          Nam fermentum posuere mauris, quis aliquam nibh dictum sed.</p>
+      </details>
+    </article>
+
+
+
+
+
