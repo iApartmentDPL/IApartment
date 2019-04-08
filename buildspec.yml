@@ -1,5 +1,20 @@
-version: 0.2
-phases:
-  install:
-    commands:
-      
+Project:
+  Type: AWS::CodeBuild::Project
+  Properties:
+    Name: iApartment-IOT-DPL
+    Description: A description about my project
+    ServiceRole: codebuild-iApartment-IOT-service-role
+    Artifacts:
+      Type: no_artifacts
+    Environment:
+      Type: windows
+      ComputeType: BUILD_GENERAL1_SMALL
+      Image: aws/codebuild/windows-base:1.0
+      EnvironmentVariables:
+      - Name: Project
+        Value: IOTS
+    Source:
+      Location: https://github.com/iApartmentDPL/IApartment.git
+      Type: S3
+    TimeoutInMinutes: 10
+    
